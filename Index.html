@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagus Nervus App OerLifestyle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header met gecentreerd logo -->
+        <header>
+            <a href="https://oerlifestyle.com" target="_blank">
+                <img src="OERLOGO.png" alt="OerLifestyle Logo" class="logo">
+            </a>
+        </header>
+
+        <main>
+            <h1>Checklist Nervus Vagus</h1>
+            
+            <!-- Persoonlijke Informatie -->
+            <section id="personal-info">
+                <h2>Persoonlijke Informatie</h2>
+                <form id="personal-form">
+                    <div class="form-group">
+                        <label for="name">Naam:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Datum:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="session">Sessie:</label>
+                        <input type="text" id="session" name="session">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Triage -->
+            <section id="triage">
+                <h2>Triage</h2>
+                <form id="triage-form">
+                    <div class="form-group">
+                        <label for="topjes">Topjes:</label>
+                        <input type="text" id="topjes" name="topjes">
+                    </div>
+                    <div class="form-group">
+                        <label for="cp">CP:</label>
+                        <input type="text" id="cp" name="cp">
+                    </div>
+                    <div class="rating-group">
+                        <h3>Energie Niveau (0 = Laag, 10 = Hoog):</h3>
+                        <div class="rating" id="energy-level">
+                            <!-- Dynamisch gegenereerde rating buttons via JavaScript -->
+                        </div>
+                    </div>
+                    <div class="rating-group">
+                        <h3>Ontspanning (0 = Geen, 10 = Hoog):</h3>
+                        <div class="rating" id="relaxation-level">
+                            <!-- Dynamisch gegenereerde rating buttons via JavaScript -->
+                        </div>
+                    </div>
+                    <div class="rating-group">
+                        <h3>Welzijn (0 = Geen, 10 = Hoog):</h3>
+                        <div class="rating" id="wellbeing-level">
+                            <!-- Dynamisch gegenereerde rating buttons via JavaScript -->
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Symptomen Monitoren -->
+            <section id="symptoms-monitoring">
+                <h2>Symptomen Monitoren</h2>
+                <form id="symptoms-form">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Symptoom</th>
+                                <!-- Nummers 0 t/m 10 -->
+                                <th>0</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                            </tr>
+                        </thead>
+                        <tbody id="symptoms-body">
+                            <!-- Dynamisch gegenereerde rijen via JavaScript -->
+                        </tbody>
+                    </table>
+                </form>
+            </section>
+
+            <!-- Specifieke Vagus-gerelateerde Symptomen -->
+            <section id="vagus-symptoms">
+                <h2>Specifieke Vagus-gerelateerde Symptomen</h2>
+                <form id="vagus-form">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Symptoom</th>
+                                <!-- Nummers 0 t/m 10 -->
+                                <th>0</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                            </tr>
+                        </thead>
+                        <tbody id="vagus-body">
+                            <!-- Dynamisch gegenereerde rijen via JavaScript -->
+                        </tbody>
+                    </table>
+                </form>
+            </section>
+
+            <!-- Resultaten en Aanbevelingen -->
+            <section id="results">
+                <h2>Resultaten en Aanbevelingen</h2>
+                <button id="calculate-button">Bereken Resultaten</button>
+                <div id="advice">
+                    <!-- Adviezen worden hier weergegeven -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2023 OerLifestyle App</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript-bestand -->
+    <script src="script.js"></script>
+</body>
+</html>
